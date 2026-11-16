@@ -12,6 +12,7 @@ background: radial-gradient(circle at 50% 50% in oklch, oklch(72.83% 0.1667 27.4
     grid-template-areas: 
                         "header header"
                         "aside main"
+                        "sb sb"
                         "footer footer";
 }
 
@@ -50,6 +51,9 @@ header{
 aside{
     grid-area: aside;
 }
+.sb{
+    grid-area: sb;
+}
 footer{
     grid-area: footer;
 }
@@ -63,4 +67,37 @@ h1, h2 {
 }
 p{
     font-family: Comic Neue, sans-serif;
+}
+
+
+
+.sb h2 {
+    font-family: Silkscreen, sans-serif;
+}
+
+.sb p {
+    font-family: "Comic Neue", sans-serif;
+}
+
+.sb ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.sb li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid purple;
+    border-radius: 15px;
+    font-family: "Comic Neue", sans-serif;
+    font-size: 20px;
+}
+
+.sb li img {
+    width: 60px;
+    height: 60px;
 }
