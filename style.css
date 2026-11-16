@@ -14,6 +14,8 @@ background: radial-gradient(circle at 50% 50% in oklch, oklch(72.83% 0.1667 27.4
                         "aside main"
                         "sb sb"
                         "footer footer";
+                            
+    padding: 15px;
 }
 
 .collective {
@@ -60,6 +62,8 @@ footer{
 
 img {
     align-self: center;
+    max-width: 100%;
+    max-height: auto;
 }
 
 h1, h2 {
@@ -87,7 +91,7 @@ p{
 .sb li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 15px;
     padding: 12px;
     margin: 10px 0;
@@ -100,4 +104,22 @@ p{
 .sb li img {
     width: 60px;
     height: 60px;
+}
+
+@media (max-width: 500px) {
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "sb"
+            "footer";
+    padding: 15px;     
+    gap: 5px;                  
+    }
+
+
 }
