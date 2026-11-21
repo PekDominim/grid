@@ -12,6 +12,7 @@ background: radial-gradient(circle at 50% 50% in oklch, oklch(72.83% 0.1667 27.4
     grid-template-areas: 
                         "header header"
                         "aside main"
+                        "comunity comunity"
                         "sb sb"
                         "footer footer";
                             
@@ -104,6 +105,14 @@ p{
 .sb li img {
     width: 60px;
     height: 60px;
+}
+
+.comunity{
+    grid-area: comunity;
+}
+.comunity img{
+    width: 250px;
+    height: auto;
 }
 
 @media (max-width: 500px) {
